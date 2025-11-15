@@ -2,9 +2,9 @@
 A basic web project built with Bootstrap, demonstrating fundamental components like a navigation menu, a form, a table, images, and buttons.
 
 ## Table of Contents
-- Description (#description)
-- Features (#features)
-- Getting Started (#getting-started)
+- [Description] (#description)
+- [Features] (#features)
+- [Getting Started] (#getting-started)
 
 ## Description
 This project serves as a simple, static webpage to showcase the integration of various Bootstrap components. The layout is designed to be responsive and visually appealing out-of-the-box.
