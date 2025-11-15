@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">RS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRS" aria-controls="navbarRS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarRS">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="mt-4">Welcome to Bootstrap Assignment</h1>
+
+        <h3 class="mt-4">Registration Form</h3>
+        <!-- Registration Form -->
+        <form class="bg-success-subtle border border-success rounded mb-5 p-4">
+            <!-- Using a grid to place First and Last Name side-by-side -->
+            <div class="row mb-3"> 
+                <div class="col">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="fname">
+                </div>
+                <div class="col">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lname">
+                </div>
+            </div>
+            <!-- Email and Password are required -->
+            <div class="mb-3">
+                <label for="userEmail" class="form-label">Email address*</label>
+                <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="userPassword" class="form-label">Password*</label>
+                <input type="password" class="form-control" id="userPassword" required minlength="8" aria-describedby="passwordHelp">
+                <div id="passwordHelp" class="form-text">
+                    Your password must contain at least 8 characters.
+                </div>
+            </div>
+            <!-- Text Area, Checkbox, and Submit Button -->
+            <div class="mb-3">
+                <label for="userMessage" class="form-label">Enter your message</label>
+                <textarea class="form-control" id="userMessage"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                <label class="form-check-label" for="termsCheck">Agree to Terms of Use</label>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+
+        <h3>Table for Displaying Data</h3>
+
+        <!-- Responsive Table -->
+        <div class="table-responsive">
+            <table class="table table-striped table-hover caption-top mt-2 mb-5">
+                <caption>List of registered users</caption>
+                <thead class="table-secondary">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>motto@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>thorntonj@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john.doe@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Sarah</td>
+                        <td>McKoll</td>
+                        <td>sarah_mckoll@outlook.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Image and Button Section</h3>
+
+        <!-- Responsive Image -->
+        <h6 class="mt-4">- Responsive Image</h6>
+        <img src="images/autum_horizontal.jpg" class="img-fluid rounded-top mb-5" alt="Autum">
+        
+        <!-- Circular Image -->
+        <h6>- Circular Image</h6>
+        <img src="images/circular.jpg" class="rounded-circle mb-5" alt="Festival" style="width: 30%;">
+        
+        <!-- Visible Button and Hidden Button -->
+        <h6>- Visible and Hidden Buttons</h6>
+        <div class="mb-5">
+            <button type="button" class="btn btn-primary">Always Visible</button>
+            <button type="button" class="btn btn-danger d-none d-md-inline">Now You See Me...</button>
+        </div>
+
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
